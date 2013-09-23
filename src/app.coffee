@@ -1,8 +1,8 @@
 express = require "express"
 mongoose = require "mongoose"
+Q = require "Q"
 
 app = express()
-
 app.use( express.bodyParser() )
 
 # mongoose.connect(process.env.MONGOHQ_URL)
@@ -25,7 +25,25 @@ ClassificationScheme = new mongoose.Schema({
 })
 Classification = mongoose.model("Classification", ClassificationScheme)
 
-# Subject.find({random: {"$gt": Math.random}}).sort("random").limit(1)[0]
+app.get("/gettwo", (req, res) ->
+  
+  dfd1 = Q.defer()
+  dfd2 = Q.defer()
+  subjects = {}
+  
+  Q.all([dfd1.promise, dfd2.promise]).then( ->
+    res.json(subjects)
+  )
+  
+  Subject.find({type: 'slow', random: {"$gt": Math.random()}}).sort("random").limit(1).execFind( (err, subject) ->
+    subjects["slow"] = subject[0]
+    dfd1.resolve()
+  )
+  Subject.find({type: 'fast', random: {"$gt": Math.random()}}).sort("random").limit(1).execFind( (err, subject) ->
+    subjects["fast"] = subject[0]
+    dfd2.resolve()
+  )
+)
 
 app.get('/subjects', (req, res) ->
   Subject.find({random: {"$gt": Math.random()}}).sort("random").limit(1).execFind( (err, subject) ->
