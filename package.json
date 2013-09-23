@@ -2,6 +2,9 @@
   "name": "rotate-this",
   "description": "rotate this",
   "version": "0.0.1",
+  "scripts": {
+    "start": "cake server"
+  },
   "dependencies": {
     "express": "*",
     "mongoose": "*"
