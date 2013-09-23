@@ -1,0 +1,15 @@
+{
+  "name": "rotate-this",
+  "description": "rotate this",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "*",
+    "mongoose": "*"
+  },
+  "devDependencies": {
+    "http-server": "0.5.x",
+    "coffee-script": "1.6.x",
+    "nodemon": "0.7.x"
+  },
+  "engine": "node >= 0.10.12"
+}
