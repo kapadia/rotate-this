@@ -4,7 +4,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* general */
 html{
-	background: url("http://www.snapshotserengeti.org/images/big-wood.jpg") fixed center top;
+	background: url("http://www.galaxyzoo.org/images/gz_headerimage.jpg") fixed center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
