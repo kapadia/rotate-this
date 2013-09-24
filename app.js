@@ -6,13 +6,13 @@
 
   mongoose = require("mongoose");
 
-  Q = require("Q");
+  Q = require("q");
 
   app = express();
 
   app.use(express.bodyParser());
 
-  mongoose.connect('mongodb://localhost/rotate_this');
+  mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://localhost/rotate_this');
 
   db = mongoose.connection;
 

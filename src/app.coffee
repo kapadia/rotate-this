@@ -1,12 +1,12 @@
 express = require "express"
 mongoose = require "mongoose"
-Q = require "Q"
+Q = require "q"
 
 app = express()
 app.use( express.bodyParser() )
 
 # mongoose.connect(process.env.MONGOHQ_URL)
-mongoose.connect('mongodb://localhost/rotate_this')
+mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://localhost/rotate_this')
 db = mongoose.connection
 
 SubjectScheme = new mongoose.Schema({
