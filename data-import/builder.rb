@@ -1,7 +1,7 @@
 require 'mongo'
 include Mongo
 
-@location = ""
+@location = "http://ubret.s3.amazonaws.com/rotate-this"
 
 # Read files from disk
 fast_files = Dir["subjects/atlas_jpegs/fast/*.jpg"]

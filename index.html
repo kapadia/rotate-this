@@ -5,31 +5,38 @@
   <meta name="description" content="Rotate This" />
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/zooniverse/zooniverse.css" />
   <link rel="stylesheet" type="text/css" href="css/zooniverse/top-bar.css" />
+  <link rel="stylesheet" type="text/css" href="css/zooniverse/dialog.css" />
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  
   <script src="main.js"></script>
   <title>Find the Slow Rotator</title>
 </head>
 <body>
 
-<section id="intro">
-  <p>Let's try an experiment for the Evolutionary Paths in Galaxy Morphology conference. Below are two SDSS images of early-type galaxies from ATLAS<sup>3D</sup>. One of them is a fast rotator and the other is a slow rotator. Click on the one that you think is the <b>SLOW ROTATOR</b>.</p>
-<br>
-  <p>We'll aggregate the results and present them by the end of the conference.</p>
-</section>
 
-<section id="comparison">
-<div class="image">
-  <img class="hoverimage" src="images/thumbs_up.png" alt="" />
-  <img class="subject" id="subject1" src="" />
+<div class="content">
+  
+  <div class="intro">
+    <h1>Rotate This!</h1>
+    <p>Let's try an experiment for the Evolutionary Paths in Galaxy Morphology conference. Below are two SDSS images of early-type galaxies from ATLAS<sup>3D</sup>. One of them is a fast rotator and the other is a slow rotator. Click on the one that you think is the <b>SLOW ROTATOR</b>.</p>
+    <p>We'll aggregate the results and present them by the end of the conference.</p>
+  </div>
+  
+  <section id="comparison" class="hide">
+    <div class="image">
+      <img class="hoverimage" src="images/thumbs_up.png" alt="" />
+      <img class="subject" id="subject1" src="" data-id="" />
+    </div>
+    
+    <div class="image">
+      <img class="hoverimage" src="images/thumbs_up.png" alt="" />
+      <img class="subject" id="subject2" src="" data-id="" />
+    </div>
+  </section>
 </div>
 
-<div class="image">
-  <img class="hoverimage" src="images/thumbs_up.png" alt="" />
-  <img class="subject" id="subject2" src="" />
-</div>
-
-</section>
 </body>
 </html>

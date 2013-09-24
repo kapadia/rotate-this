@@ -1,140 +1,69 @@
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
 
-/* general */
 html{
-	background: url("http://www.galaxyzoo.org/images/gz_headerimage.jpg") fixed center top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+  background: url("http://www.galaxyzoo.org/images/gz_headerimage.jpg") fixed center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 body{
-	font-family:"Open Sans", sans-serif;
-	color:white;
-	font-size: 16px;
-	margin:0px;
-	line-height:1.5em;
-
+  font-family: "Helvetica", sans-serif;
+  color: white;
+  font-size: 16px;
+  margin:0px;
+  line-height:1.5em;
 }
 
-header, section{
-	margin: 0 auto;
-	width: 1150px;
+.hide {
+  display: none;
 }
 
-a,a:visited{
-	color:#FF9900;
+div.content {
+  margin: 0 auto;
+  padding-top: 5%;
+  width: 900px;
 }
 
-
-/*navigation*/
-
-nav .zooniverse-top-bar{
-	background:#f9f8f3;
-	height:4px;
-}
-
-header{
-	margin-top:30px;
-	font-size: 30px;
-
-}
-
-header p{
-		border-bottom:1px solid white;
-		font-family:"Rambla", sans-serif;
-		color:#FF9900;
-		font-style: italic;
-		font-weight: bold;
-		line-height: 2em;
-		text-shadow: 0 1px 1px #140b03;
-}
-
-
-header img{
-	margin-right: 20px;
-	vertical-align: middle;
-}
-
-
-header img.zooniverse{
-	margin-top: 10px;
-	width:250px;
-}
-
-
-section#intro{
-	margin-top: 50px;
-
-}
-
-/*home*/
-
-section#instructions{
-	margin-top: 70px;
-	height: 70px;
-}
-
-section#instructions p{
-	text-align: center;
-	font-size: 35px;
-	font-weight: bold;
-	margin:1em;
+div.intro p {
+  margin-bottom: 10px;
 }
 
 section#comparison{
-	padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 section#comparison div.image{
-	float:left;
-	position:relative;
+  float:left;
+  position:relative;
 }
 
 section#comparison div.image:first-child{
-	margin-right:100px;
+  margin-right:100px;
 }
 
 section#comparison div.image:hover{
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .hoverimage { 
-	position: absolute; top: 0; left: 0; display: none; 
-	margin-top: 80px;
-	margin-left: 170px;
-	z-index: 100;
-
+  position: absolute;
+  top: 0;
+  left: 0; 
+  display: none;
+  margin-top: 56px;
+  margin-left: 119px;
+  z-index: 100;
 }
 
 .image:hover .hoverimage { 
-	display: block;
+  display: block;
 }
 
 section#comparison div.image img.subject{
-	width:500px;
-	border: white 6px solid;
-	z-index: 0;
-
+  width: 350px;
+  border: white 6px solid;
+  z-index: 0;
 }
-
-/*top ten*/
-section#gallery{
-	margin-top: 50px;
-}
-
-section#gallery img{
-	float:left;
-	margin:25px;
-	width:320px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	border: white 6px solid;
-}
-
-
 
 
