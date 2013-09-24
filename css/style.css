@@ -30,15 +30,17 @@ div.intro p {
 }
 
 section#comparison{
-  padding-bottom: 100px;
+  padding-bottom: 10px;
+  width: 100%;
 }
 
 section#comparison div.image{
-  float:left;
+  display: inline-block;
   position:relative;
 }
 
 section#comparison div.image:first-child{
+  display: inline-block;
   margin-right:100px;
 }
 
@@ -66,4 +68,8 @@ section#comparison div.image img.subject{
   z-index: 0;
 }
 
-
+div.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
