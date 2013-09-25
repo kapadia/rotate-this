@@ -48,20 +48,6 @@ section#comparison div.image:hover{
   cursor: pointer;
 }
 
-.hoverimage { 
-  position: absolute;
-  top: 0;
-  left: 0; 
-  display: none;
-  margin-top: 56px;
-  margin-left: 119px;
-  z-index: 100;
-}
-
-.image:hover .hoverimage { 
-  display: block;
-}
-
 section#comparison div.image img.subject{
   width: 350px;
   border: white 6px solid;

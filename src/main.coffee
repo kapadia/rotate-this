@@ -83,4 +83,3 @@ $(document).ready ->
     User = zooniverse.models.User
     setupLogin()
   )
-  
